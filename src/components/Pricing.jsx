@@ -77,7 +77,7 @@ function Pricing() {
       </div>
       <div className="pricing__title">
         <p>Find your pricing plan</p>
-        <h2>Finding the best salons in your city could be time consuming..</h2>
+        <h2>Finding the best spa in your city could be time consuming..</h2>
       </div>
       <div className="pricing">
         {plans.map(({ name, price }, index) => {

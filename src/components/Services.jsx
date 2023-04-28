@@ -14,20 +14,21 @@ function Services() {
 
   const data = [
     {
-      type: "Blowout",
+      type: "Waxing",
       text: "Shampoo and blow dry. If you are looking to celebrate your special day with us, please note we only have 3 stylists scheduled",
       image: service1,
     },
     {
-      type: "Olaplex",
+      type: "Massage",
       text: "Hair treatment helping keep coloured hair healthy from the inside If you are looking to celebrate your special day with us.",
       image: service2,
     },
     {
-      type: "Retouch",
+      type: "Facial",
       text: "We bring to you a bouquet of services to remain worry free about your looks. We have made effortless beauty equipment and products.",
       image: service3,
     },
+    
   ];
   return <Section id="services" ref={element}>
     <Title value="services" />

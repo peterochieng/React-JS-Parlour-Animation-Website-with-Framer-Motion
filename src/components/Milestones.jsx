@@ -21,7 +21,7 @@ function Milestones() {
     },
     {
       image: milestone2,
-      data: "of raw data",
+      data: "messages attended to",
       amount: "1.4M",
     },
     {

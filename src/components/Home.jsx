@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import home from "assets/home.png";
+import homeBackground from "assets/homeBackground.jpg";
 import play from "assets/play.png";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
@@ -16,11 +16,11 @@ function Home() {
       >
         <div className="content">
           <div className="title">
-            <h1>Blossoms Parlour</h1>
+            <h1>Azalea Spa & Wellness</h1>
           </div>  
           <div className="subTitle">
             <p>
-              At the Beauty Parlour, we believe in beauty with a conscience. 
+              We believe in beauty with a conscience. 
               We have created a salon that offers the highest quality hair 
               services.
             </p>  
@@ -35,21 +35,21 @@ function Home() {
       >
           <div className="grid">
             <div className="col">
-                <strong>Parlour</strong>
-                <p>Blossoms Academy</p>
+                <strong>Azalea</strong>
+                <p>Heal your body | Heal your soul</p>
             </div>
             <div className="col">
                 <strong>Email</strong>
-                <p>blossoms@gmail.com</p>
+                <p>spawellness2021@gmail.com</p>
             </div> 
             <div className="col">
                 <strong>Mobile</strong>
-                <p>+91 8897666511</p>
+                <p>+254 724 454512</p>
             </div> 
             <div className="col">
                 <strong>Address</strong>
-                <p>322, Long Fly,</p>
-                <p>997773 India</p>
+                <p>Nairobi, Kenya. </p>
+                <p>Imara Daima.</p>
             </div> 
             <div className="col">
                 <strong>Services</strong>
@@ -59,7 +59,7 @@ function Home() {
             <div className="col">
                 <strong>Working Hours</strong>
                 <p>Monday to Friday</p>
-                <p>08:00 to 09:00</p>
+                <p>08:00 am to 09:00 pm</p>
             </div>   
           </div>
       </motion.div>
@@ -68,7 +68,7 @@ function Home() {
 }
 
 const Section = styled.section`
-  background: url(${home}) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(${homeBackground}) no-repeat center;
   min-height: 100vh;
   background-size: cover;
   position: relative;

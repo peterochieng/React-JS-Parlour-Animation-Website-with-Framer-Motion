@@ -29,27 +29,27 @@ function Contact() {
             <p>
               If you have any questions simply use the following contact details.
             </p>
-            <p>
+            {/* <p>
               Business Owners to take their Online Presence 
               to the next level. We are in the business of Bulk SMS, Digital Marketing.
-            </p>
+            </p> */}
             <div>
               <p>
-                <strong>Address:</strong> 33, Flyover Road,
+                <strong>Address:</strong> Nairobi, Kenya. Imara Daima.
               </p>
               <p>
-                <strong>Email:</strong> blossoms@gmail.com
+                <strong>Email:</strong> spawellness2021@gmail.com
               </p>
               <p>
-                <strong>Website:</strong> www.blossoms.com
+                <strong>Website:</strong> www.azaleaspa.com
               </p>
             </div>
           </div>
           <div className="contact__data__form">
-            <input type="text" placeholder='name' />
+            {/* <input type="text" placeholder='name' />
             <input type="email" placeholder='email' />
             <textarea placeholder='message'></textarea>
-            <button>Send Message</button>
+            <button>Send Message</button> */}
           </div>
         </div>
       </motion.div>
