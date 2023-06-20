@@ -21,7 +21,7 @@ function Home() {
           <div className="subTitle">
             <p>
               We believe in beauty with a conscience. 
-              We have created a salon that offers the highest quality hair 
+              We have created a spa that offers the highest quality 
               services.
             </p>  
           </div>
