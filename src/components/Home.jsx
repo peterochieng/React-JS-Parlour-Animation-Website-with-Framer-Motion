@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 import homeBackground from "assets/homeBackground.jpg";
 import play from "assets/play.png";
-import Navbar from './Navbar';
+import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
 
@@ -10,30 +10,33 @@ function Home() {
   return (
     <Section id="home">
       <Navbar />
-      <motion.div className="home"
-      variants={homeAnimation}
-      transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      <motion.div
+        className="home"
+        variants={homeAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
       >
         <div className="content">
           <div className="title">
             <h1>Azalea Spa & Wellness</h1>
-          </div>  
+          </div>
           <div className="subTitle">
             <p>
-              We believe in beauty with a conscience. 
-              We have created a spa that offers the highest quality 
-              services.
-            </p>  
+              Embark on a sensory journey to relax your mind, body, and spirit.
+              . At Azalea Spa we are committed to providing you with the best
+              beauty advice, treatments, and products to enhance your physical
+              appearance and self confidence.
+            </p>
           </div>
           <img src={play} alt="Play Button" />
-        </div>  
+        </div>
       </motion.div>
 
-      <motion.div className="info"
-      variants={homeInfoAnimation}  
-      transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      <motion.div
+        className="info"
+        variants={homeInfoAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
       >
-          <div className="grid">
+        {/* <div className="grid">
             <div className="col">
                 <strong>Azalea</strong>
                 <p>Heal your body | Heal your soul</p>
@@ -61,18 +64,19 @@ function Home() {
                 <p>Monday to Friday</p>
                 <p>08:00 am to 09:00 pm</p>
             </div>   
-          </div>
+          </div> */}
       </motion.div>
     </Section>
   );
 }
 
 const Section = styled.section`
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(${homeBackground}) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url(${homeBackground}) no-repeat center;
   min-height: 100vh;
   background-size: cover;
   position: relative;
-  .home{
+  .home {
     height: 100%;
     .content {
       display: flex;
@@ -93,6 +97,7 @@ const Section = styled.section`
         p {
           width: 70%;
           margin-bottom: 2rem;
+          text-align: justify;
         }
       }
     }
@@ -133,4 +138,4 @@ const Section = styled.section`
   }
 `;
 
-export default Home
+export default Home;

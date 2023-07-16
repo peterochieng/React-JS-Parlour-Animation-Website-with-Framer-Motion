@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import Title from './Title';
+import Title from "./Title";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { skillsBarAnimation } from "animation";
@@ -38,10 +38,11 @@ function Skills() {
       </div>
       <div className="skills">
         <div className="skills__bars">
-          {
-            skillsData.map(({ name, amount }) => {
-              return (
-                <motion.div className="skills__bars__bar" key={name}
+          {skillsData.map(({ name, amount }) => {
+            return (
+              <motion.div
+                className="skills__bars__bar"
+                key={name}
                 variants={skillsBarAnimation}
                 animate={controls}
                 transition={{
@@ -49,37 +50,35 @@ function Skills() {
                   type: "tween",
                   duration: 0.8,
                 }}
-                >
-                  <div className="container">
-                    <progress value={amount} max="100" />
-                    <span>{name}</span>
-                  </div>
-                  <h3>{amount}%</h3>
-                </motion.div>
-              );
-            })
-          }
+              >
+                <div className="container">
+                  <progress value={amount} max="100" />
+                  <span>{name}</span>
+                </div>
+                <h3>{amount}%</h3>
+              </motion.div>
+            );
+          })}
         </div>
         <div className="skills__content">
-          <p className="title">
-            Beauty Services and Products
-          </p>
+          <p className="title">Get Directions</p>
           <p className="description">
-            To be a successful beautician, you should have a wide range 
-            of skills in beauty services, good communication skills, 
-            and the ability to advise clients on suitable hairstyles.
+            Azalea Spa is located in Imara Daima – Villa Franca Estate Room 307
+            at the shopping Centre, we are right behind the new Imaara Mall
+            along Tegla Lorupe Road, 100m off Mombasa Road and 10km, 15minutes
+            drive from the CBD.
           </p>
         </div>
       </div>
     </Section>
-  )
+  );
 }
 
 const Section = styled.section`
-min-height: 100vh;
+  min-height: 100vh;
   height: 140vh;
   background-color: var(--secondary-color);
-  
+
   .sideTitle {
     h1 {
       color: #fff;
@@ -135,7 +134,7 @@ min-height: 100vh;
               border-radius: 20px;
             }
             &::-webkit-progress-value {
-              background-color: white; 
+              background-color: white;
               border-radius: 20px;
             }
           }
@@ -155,7 +154,7 @@ min-height: 100vh;
       z-index: 2;
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 1080px) { 
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
     overflow-x: hidden;
     padding: 2rem 0;
     .background {
@@ -201,4 +200,4 @@ min-height: 100vh;
     }
   }
 `;
-export default Skills
+export default Skills;
